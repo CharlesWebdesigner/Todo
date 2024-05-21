@@ -5,6 +5,7 @@ const mongodb =require("./factor/mongodb")
 const Todo =require('./factor/model')
 const path=require("path");
 const dotenv=require("dotenv")
+const moment= require("moment")
 dotenv.config()
 const port=process.env.PORT || 5000;
 
@@ -15,8 +16,9 @@ app.use(express.static(path.join(__dirname,"./Public/css")))
 app.get("/",async(req,res)=>{
     try{
                const todo= await Todo.find({}).sort({createdAt:-1})
-        res.render("index",{title:"List todo", todo})
-        // res.locals.moment=moment;
+               res.locals.moment=moment;
+               res.render("index",{title:"List todo", todo})
+        
     }catch(e){
         res.status(500).json({message:e.message})
     }
