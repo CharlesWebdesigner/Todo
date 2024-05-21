@@ -9,12 +9,12 @@
 <li>Node and Express framework for server-side logic</li>
 </ul>
 <h2>Installation</h2>
-<p>Clone the repository:<a href="">Clone</a></p>
+<p>Clone the repository:<a href="https://github.com/CharlesWebdesigner/Todo.git">Clone</a></p>
 <ul>
 <li>Install dependencies: npm install</li>
 <li>configure env <u>:PORT</u> and <u>Mongo_url<u><li>
 <li>Start the server: node app.js</li>
-<li>Open the app in your web browser: http://localhost:3000</li>
+<li>Open the app in your web browser: <a href="#">http://localhost:3000 <a></li>
 </ul>
 <h2>Technology Stack</h2>
 <ul>
